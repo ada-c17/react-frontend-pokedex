@@ -1,0 +1,23 @@
+$red: #cf3056
+
+$colors: ("poison": "#821bbd", "grass": "#1bbd2a", "fire": "#ea8032", "normal":"#bfa694", "psychic":"#e16bcc", "water":"#46b2df","flying":"#a0c3d1","electric":"#e4d741")
+
+@each $name, $hexa in $colors 
+    .#{$name}
+      background-color: #{$hexa}
+    
+    
+nav
+    background-color: $red
+
+.collection-item 
+    span
+        display: block
+    .title
+        font-weight: bold
+    .biometrics
+        display: none
+    .type
+        .badge
+            border-radius: 5px
+            color: white

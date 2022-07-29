@@ -7,12 +7,18 @@ const PokemonList = (props) => {
         key={pokemon.id}
         id={pokemon.id}
         name={pokemon.name}
+        img={pokemon.img}
+        type={pokemon.type}
+        height={pokemon.height}
+        weight={pokemon.weight}
       />
     );
   });
   return (
     <div>
-      {pokeComponents}
+       <ul className="collection">
+        {pokeComponents}
+      </ul>
     </div>
   );
 };
