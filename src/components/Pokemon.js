@@ -8,7 +8,7 @@ const Pokemon  = (props) => {
   
   return (
     <>
-    <li className="collection-item avatar">
+    <li className="collection-item avatar col s12 m6 l4">
       <img src={props.img} alt="" className="circle"/>
       <span className="title">#{props.id}. {props.name}</span>
       <span className="type">{typeToComponent(props.type)}</span>
